@@ -70,7 +70,6 @@ public class AddressBook {
     }
 
     Contact contact = new Contact();
-
     public void display() {
 
         contactList.forEach(System.out::println);
