@@ -62,7 +62,6 @@ public class AddressBook {
         }
 
     }
-
     public void display() {
         contactList.forEach(System.out::print);
     }
