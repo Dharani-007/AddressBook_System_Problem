@@ -12,7 +12,6 @@ public class AddressBook {
     long phoneNumber;
     String email;
     private List<Contact> contactList = new ArrayList<>();
-
     Scanner sc = new Scanner(System.in);
 
     public void addContact() {
