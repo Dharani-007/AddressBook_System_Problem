@@ -11,14 +11,13 @@ public class AddressBook {
     String zip;
     String phoneNumber;
     String email;
-    private static List<Contact> contactList = new ArrayList<>();;
+    private static List<Contact> contactList;
 
     public AddressBook() {
         contactList = new ArrayList<>();
     }
 
     public List<Contact> getContactList() {
-
         return contactList;
     }
 
@@ -62,8 +61,9 @@ public class AddressBook {
         }
 
     }
+
     public void display() {
-        contactList.forEach(System.out::print);
+        contactList.stream().forEach(System.out::println);
     }
 
     public int getIndex(String firstName) {
@@ -79,8 +79,7 @@ public class AddressBook {
     public boolean checkDuplicate(String firstName) {
 
         for (int i = 0; i < contactList.size(); i++) {
-            if (firstName.equals(contactList.get(i).getFirstName())) {
-
+            if (contactList.get(i).getFirstName().contains(firstName)) {
                 return true;
             }
         }
@@ -110,10 +109,7 @@ public class AddressBook {
 
     public void removeContact(int index) {
         contactList.remove(index);
-    }
 
-    public void clear() {
-        contactList.clear();
     }
 
 }
