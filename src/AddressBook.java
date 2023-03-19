@@ -69,11 +69,11 @@ public class AddressBook {
 
     }
 
-    Contact contact = new Contact();
     public void display() {
 
         contactList.forEach(System.out::println);
     }
+
     public int getIndex(String firstName) {
         int index = -1;
         for (int i = 0; i < contactList.size(); i++) {
@@ -103,11 +103,11 @@ public class AddressBook {
         return null;
     }
 
-    public void searchByCityOrStateName() {
-        System.out.println("Enter State Name");
+    public void viewByCityOrStateName() {
+        System.out.println("Enter State or city Name");
         String searchText = sc.next();
         contactList.stream().filter(el -> (el.getCity().equals(searchText) || el.getState().equals(searchText)))
-                .forEach(System.out::println);
+                .forEach(p -> System.out.println("First Name :" + p.getFirstName() + "Last Name:" + p.getLastName()));
 
     }
 
