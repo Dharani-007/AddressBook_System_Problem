@@ -1,5 +1,4 @@
-public class Contacts
-{
+public class Contacts {
     private String firstName;
     private String lastName;
     private String address;
@@ -72,8 +71,8 @@ public class Contacts
     public void setEmail(String email) {
         this.email = email;
     }
-    public String toString()
-    {
+
+    public String toString() {
         return "Contacts [firstName=" + firstName + ", lastName=" + lastName + ", address=" + address + ", city=" + city
                 + ", state=" + state + ", zipCode=" + zipCode + ", mobileNo=" + mobileNo + ", email=" + email + "]";
     }
