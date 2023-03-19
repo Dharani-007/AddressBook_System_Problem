@@ -74,7 +74,6 @@ public class AddressBook {
 
         contactList.forEach(System.out::println);
     }
-
     public int getIndex(String firstName) {
         int index = -1;
         for (int i = 0; i < contactList.size(); i++) {
