@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Contact {
@@ -14,12 +12,12 @@ public class Contact {
     private int zip;
     private long phoneNumber;
     private String email;
-    List<Contact> contactList = new ArrayList<Contact>();
 
     @Override
     public String toString() {
-        return "Contact [firstName=" + firstName + ", lastName=" + lastName + ", address=" + address + ", city=" + city
-                + ", state=" + state + ", zip=" + zip + ", phoneNumber=" + phoneNumber + ", email=" + email + "]";
+        return getClass().getSimpleName() + "Contact [firstName=" + firstName + ", lastName=" + lastName + ", address="
+                + address + ", city=" + city + ", state=" + state + ", zip=" + zip + ", phoneNumber=" + phoneNumber
+                + ", email=" + email + "]";
     }
 
     public Contact() {
@@ -35,28 +33,6 @@ public class Contact {
         this.zip = zip;
         this.phoneNumber = phoneNumber;
         this.email = email;
-    }
-
-    void addContact() {
-
-        System.out.println("Enter your First Name");
-        firstName = sc.next();
-        System.out.println("Enter your Last Name");
-        lastName = sc.next();
-        System.out.println("Enter your Address");
-        address = sc.next();
-        System.out.println("Enter your City");
-        city = sc.next();
-        System.out.println("Enter your State");
-        state = sc.next();
-        System.out.println("Enter your ZipCode");
-        zip = sc.nextInt();
-        System.out.println("Enter your Phone Number");
-        phoneNumber = sc.nextLong();
-        System.out.println("Enter your E-mail");
-        email = sc.next();
-        contactList.add(new Contact(firstName, lastName, address, city, state, zip, phoneNumber, email));
-
     }
 
     public String getFirstName() {
@@ -85,6 +61,38 @@ public class Contact {
 
     public long getPhoneNumber() {
         return phoneNumber;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public void setZip(int zip) {
+        this.zip = zip;
+    }
+
+    public void setPhoneNumber(long phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getEmail() {
