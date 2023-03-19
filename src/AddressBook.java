@@ -11,10 +11,17 @@ public class AddressBook {
     String zip;
     String phoneNumber;
     String email;
-    private static List<Contact> contactList;
+    static List<Contact> contactList;
 
     public AddressBook() {
         contactList = new ArrayList<>();
+    }
+
+    @Override
+    public String toString() {
+        return "AddressBook [firstName=" + firstName + ", lastName=" + lastName + ", address=" + address + ", city="
+                + city + ", state=" + state + ", zip=" + zip + ", phoneNumber=" + phoneNumber + ", email=" + email
+                + "]";
     }
 
     public List<Contact> getContactList() {
@@ -62,8 +69,11 @@ public class AddressBook {
 
     }
 
+    Contact contact = new Contact();
+
     public void display() {
-        contactList.stream().forEach(System.out::println);
+
+        contactList.forEach(System.out::println);
     }
 
     public int getIndex(String firstName) {
@@ -84,6 +94,23 @@ public class AddressBook {
             }
         }
         return false;
+    }
+
+    public Contact getContactDetails(String firstName) {
+        for (int i = 0; i < contactList.size(); i++) {
+            if (contactList.get(i).getFirstName().contains(firstName)) {
+                return contactList.get(i);
+            }
+        }
+        return null;
+    }
+
+    public void searchByCityOrStateName() {
+        System.out.println("Enter State Name");
+        String searchText = sc.next();
+        contactList.stream().filter(el -> (el.getCity().equals(searchText) || el.getState().equals(searchText)))
+                .forEach(System.out::println);
+
     }
 
     public void updateContact(int i) {
@@ -109,7 +136,6 @@ public class AddressBook {
 
     public void removeContact(int index) {
         contactList.remove(index);
-
     }
 
 }
