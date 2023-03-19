@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Contact {
 
     private String firstName;
@@ -8,6 +10,7 @@ public class Contact {
     private String zip;
     private String phoneNumber;
     private String email;
+    private List<Contact> store;
 
     @Override
     public String toString() {
@@ -30,6 +33,14 @@ public class Contact {
         this.phoneNumber = phoneNumber;
         this.email = email;
 
+    }
+
+    public List<Contact> getStore() {
+        return store;
+    }
+
+    public void setStore(List<Contact> store) {
+        this.store = store;
     }
 
     public String getFirstName() {
@@ -162,4 +173,5 @@ public class Contact {
             return false;
         return true;
     }
+
 }

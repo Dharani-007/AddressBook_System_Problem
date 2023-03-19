@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae8834f6-0ba1-4ca3-8943-2744beac60bb" name="Changes" comment="Added : Ability to search Person in a City or State across the multiple  AddressBook" />
+    <list default="true" id="ae8834f6-0ba1-4ca3-8943-2744beac60bb" name="Changes" comment="Added : Ability to search Person in a City or State across the multiple  AddressBook">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AddressBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddressBook.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="UC8-Ability_tosearch_a_person_in_city" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
