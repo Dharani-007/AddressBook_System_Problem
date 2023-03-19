@@ -133,7 +133,6 @@ public class AddressBook {
         } while (act > 0 || act > 5);
         sc.close();
     }
-
     private void removeContact(int index) {
         contactList.remove(index);
 
