@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae8834f6-0ba1-4ca3-8943-2744beac60bb" name="Changes" comment="Added : Ability to search Person in a City or State across the multiple  AddressBook">
+    <list default="true" id="ae8834f6-0ba1-4ca3-8943-2744beac60bb" name="Changes" comment="Added : Ability to get number of contact persons i.e. count by City or State">
+      <change afterPath="$PROJECT_DIR$/src/AddressBookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MultipleAddressBook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AddressBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddressBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Contact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddressBookMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679213470205</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added : Ability to get number of contact persons i.e. count by City or State">
+      <created>1679214611273</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1679214611273</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -132,6 +143,7 @@
     <MESSAGE value="Added : Ability to add multiple person to Address Book" />
     <MESSAGE value="Added : Refactor to add multiple Address Book to the System. Each Address Book has a unique Name" />
     <MESSAGE value="Added : Ability to search Person in a City or State across the multiple  AddressBook" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added : Ability to search Person in a City or State across the multiple  AddressBook" />
+    <MESSAGE value="Added : Ability to get number of contact persons i.e. count by City or State" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added : Ability to get number of contact persons i.e. count by City or State" />
   </component>
 </project>
