@@ -142,13 +142,26 @@ public class AddressBook {
         contactList.remove(index);
     }
 
-    public void sort_by_PersonName() {
+    public void sortByPersonName() {
 
         List<Contact> sortedContact = contactList.stream().sorted(new compareToFirstName())
                 .collect(Collectors.toList());
-        System.out.println(sortedContact);
+        sortedContact.forEach(System.out::println);
     }
 
+    public void sortedContactByCity() {
+        contactList.stream().sorted(new compareCity()).forEach(System.out::println);
+
+    }
+
+    public void sortedContactByState() {
+        contactList.stream().sorted(new compareState()).forEach(System.out::println);
+
+    }
+
+    public void sortedContactByZip() {
+        contactList.stream().sorted(new compareZip()).forEach(System.out::println);
+    }
 }
 
 class compareToFirstName implements Comparator<Contact> {
@@ -158,5 +171,30 @@ class compareToFirstName implements Comparator<Contact> {
 
         return c1.getFirstName().compareTo(c2.getFirstName());
     }
+}
 
+class compareCity implements Comparator<Contact> {
+
+    @Override
+    public int compare(Contact c1, Contact c2) {
+        return c1.getCity().compareTo(c2.getCity());
+    }
+
+}
+
+class compareState implements Comparator<Contact> {
+
+    @Override
+    public int compare(Contact c1, Contact c2) {
+        return c1.getState().compareTo(c2.getState());
+    }
+
+}
+
+class compareZip implements Comparator<Contact> {
+
+    @Override
+    public int compare(Contact c1, Contact c2) {
+        return c1.getZip().compareTo(c2.getZip());
+    }
 }
